@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Emails</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: rgb(238, 174, 202);
+            background: radial-gradient(
+                circle,
+                rgba(238, 174, 202, 1) 0%,
+                rgba(148, 187, 233, 1) 100%
+            );
+        }
+    </style>
+    <body class="text-center h-full md:h-screen w-full m-auto px-6">
+        <h1 class="text-4xl my-12 text-gray-900 font-bold">Happy Mailing!</h1>
+        <ul class="flex flex-row justify-center items-center flex-wrap gap-4">
+            {% for email in emailList %}
+            <li
+                class="bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2"
+            >
+                {{email}}
+            </li>
+            {%endfor%}
+        </ul>
+        <!--   <form action="mailto" class="flex justify-center items-center">
+    <button type="submit">Mail</button>
+  </form> -->
+    </body>
+</html>

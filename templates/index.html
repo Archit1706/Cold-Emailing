@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cold Emailing</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: rgb(34, 193, 195);
+            background: linear-gradient(
+                    0deg,
+                    rgba(34, 193, 195, 1) 12%,
+                    rgba(253, 187, 45, 1) 100%
+                )
+                no-repeat;
+        }
+    </style>
+
+    <body class="text-center h-full md:h-screen w-full px-6">
+        <div>
+            <h1 class="text-4xl font-bold my-6">What is Cold Emailing?</h1>
+            <p class="text-xl mb-2 px-6 md:px-12">
+                A cold email is an unsolicited email used as an email marketing
+                technique to introduce your brand to a recipient who has no
+                prior relationship with you or your company. This does not mean
+                it is spamming – although it is quite easy to make it look like
+                spam mail – it is just a way of saying hello.
+            </p>
+        </div>
+        <h1 class="text-2xl font-bold my-2">
+            Generate Email IDs of CEO's whose companys' future CEO's you wanna
+            become! 😜
+        </h1>
+        <form
+            action="/emails"
+            method="post"
+            class="flex flex-col justify-center items-center bg-inherit shadow-md rounded px-8 pt-6 pb-8 mb-4 md:w-[425px] w-full mx-auto mt-12"
+        >
+            <div class="flex flex-row justify-between items-center mb-4 gap-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                    >CEO First Name</label
+                >
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Elon"
+                    required
+                />
+            </div>
+            <div class="flex flex-row justify-between items-center mb-4 gap-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                    >CEO Last Name</label
+                >
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    type="text"
+                    id="lastname"
+                    placeholder="Musk"
+                    name="lastname"
+                    required
+                />
+            </div>
+            <div class="flex flex-row justify-between items-center mb-4 gap-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                    >Company Name</label
+                >
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    type="text"
+                    id="compname"
+                    placeholder="Tesla"
+                    name="compname"
+                    required
+                />
+            </div>
+            <button
+                class="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-700 rounded"
+                type="submit"
+            >
+                Generate Emails
+            </button>
+        </form>
+    </body>
+</html>
